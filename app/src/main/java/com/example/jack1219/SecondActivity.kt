@@ -20,7 +20,6 @@ class SecondActivity : AppCompatActivity() {
             }
         )
 
-
     }
 
 }
