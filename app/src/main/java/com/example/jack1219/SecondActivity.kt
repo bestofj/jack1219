@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_parent.*
 import kotlinx.android.synthetic.main.activity_second.*
 
+
 class SecondActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,13 +14,15 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
         supportActionBar?.hide()
 
-        button_parent.setOnClickListener(
-            {
-                var myIntent = Intent(this, ParentActivity::class.java)
-                startActivity(myIntent)
-            }
-        )
+
+        button_parent.setOnClickListener {
+            var myIntent = Intent(this, ParentActivity::class.java)
+            startActivity(myIntent)
+        }
+
+
 
     }
+
 
 }
